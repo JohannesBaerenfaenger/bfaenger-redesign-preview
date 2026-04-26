@@ -172,10 +172,17 @@
     }
     .nav.solid {
       background: rgba(13,27,42,.97);
-      backdrop-filter: blur(16px);
       padding: .9rem 0;
       border-bottom: 1px solid rgba(255,255,255,.06);
       box-shadow: 0 2px 24px rgba(0,0,0,.2);
+    }
+    /* backdrop-filter on ::before so it doesn't create a containing block
+       for position:fixed children (which would break the mobile menu overlay) */
+    .nav.solid::before {
+      content: ''; position: absolute; inset: 0;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      pointer-events: none;
     }
     .nav-inner {
       display: flex; align-items: center; justify-content: space-between; gap: 1.5rem;
