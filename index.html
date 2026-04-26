@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Persönliche Kreuzfahrtberatung mit Herz. Dein Spezialist für Silversea, Star Clippers, Celebrity & Azamara. Keine Nummern – echte Kreuzfahrt-Freunde." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Kreuzfahrtberatung Bärenfänger | Silversea · Star Clippers · Celebrity · Azamara" />
+  <meta property="og:description" content="Persönliche Kreuzfahrtberatung mit Herz. Wir vermitteln traumhafte Reisen – du bist kein Kunde, du bist unser Kreuzfahrt-Freund." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.bfaenger.de/" />
+  <title>Kreuzfahrtberatung Bärenfänger | Silversea · Ponant · Star Clippers · Celebrity · Azamara</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Kreuzfahrtberatung Bärenfänger",
+    "url": "https://www.bfaenger.de",
+    "email": "orkan@bfaenger.de",
+    "description": "Persönliche Kreuzfahrtberatung und Reisevermittlung mit Herz.",
+    "areaServed": "DE",
+    "serviceType": "Reisevermittlung"
+  }
+  </script>
+
+  <style>
+    /* ── Tokens ─────────────────────────────────────── */
+    :root {
+      --ink:        #0D1B2A;   /* near-black navy */
+      --navy:       #152A4E;   /* deep brand navy */
+      --navy-mid:   #1E3A64;
+      --ocean:      #2C5F8A;   /* mid blue */
+      --horizon:    #4A7FA5;   /* lighter blue accent */
+      --gold:       #B8924A;   /* muted antique gold */
+      --gold-lt:    #D4B078;
+      --cream:      #F8F5EF;   /* warm off-white */
+      --parchment:  #EDE9E0;
+      --white:      #FFFFFF;
+      --text:       #1A1A1A;
+      --muted:      #6A6A6A;
+      --faint:      #ABABAB;
+      --border:     #DDD9D0;
+
+      --serif:  'Cormorant Garamond', 'Georgia', serif;
+      --sans:   'Jost', 'Inter', system-ui, sans-serif;
+
+      --r: 2px;          /* subtle radius – editorial feel */
+      --sh: 0 2px 20px rgba(13,27,42,.08);
+      --sh-lg: 0 8px 48px rgba(13,27,42,.16);
+      --ease: cubic-bezier(.4,0,.2,1);
+    }
+
+    /* ── Reset ──────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--sans); font-weight: 300; color: var(--text); background: var(--white); line-height: 1.75; overflow-x: hidden; }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+    button { font-family: var(--sans); }
+
+    /* ── Accessibility ──────────────────────────────── */
+    .skip { position: absolute; top: -100%; left: 1rem; background: var(--navy); color: #fff; padding: .75rem 1.5rem; font-size: .85rem; z-index: 9999; transition: top .2s; }
+    .skip:focus { top: 0; }
+    :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+    /* ── Type scale ─────────────────────────────────── */
+    h1 { font-family: var(--serif); font-weight: 300; font-size: clamp(2.5rem, 6vw, 5rem); line-height: 1.1; letter-spacing: -.01em; }
+    h2 { font-family: var(--serif); font-weight: 300; font-size: clamp(2rem, 4vw, 3.25rem); line-height: 1.15; letter-spacing: -.01em; }
+    h3 { font-family: var(--serif); font-weight: 400; font-size: clamp(1.4rem, 2.5vw, 2rem); line-height: 1.25; }
+    h4 { font-family: var(--sans); font-weight: 500; font-size: .95rem; letter-spacing: .04em; }
+    p { margin-bottom: 1em; }
+    p:last-child { margin-bottom: 0; }
+
+    .eyebrow {
+      display: inline-block;
+      font-family: var(--sans);
+      font-size: .7rem;
+      font-weight: 500;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+    .lead { font-size: 1.1rem; line-height: 1.85; color: var(--muted); }
+
+    /* ── Layout ─────────────────────────────────────── */
+    .wrap { max-width: 1260px; margin: 0 auto; padding: 0 2rem; }
+    .wrap--narrow { max-width: 860px; margin: 0 auto; padding: 0 2rem; }
+    .sec { padding: 7rem 0; }
+    .sec--sm { padding: 4rem 0; }
+    .sec--lg { padding: 10rem 0; }
+
+    /* thin decorative rule */
+    .rule {
+      display: block;
+      width: 40px;
+      height: 1px;
+      background: var(--gold);
+      margin-bottom: 1.5rem;
+    }
+    .rule--center { margin: 0 auto 1.5rem; }
+
+    /* ── Buttons ─────────────────────────────────────── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+      padding: .875rem 2.25rem;
+      font-family: var(--sans);
+      font-size: .78rem;
+      font-weight: 500;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all .3s var(--ease);
+    }
+    .btn-light {
+      background: transparent;
+      color: var(--white);
+      border-color: rgba(255,255,255,.55);
+    }
+    .btn-light:hover { background: var(--white); color: var(--navy); border-color: var(--white); }
+
+    .btn-gold {
+      background: var(--gold);
+      color: var(--white);
+      border-color: var(--gold);
+    }
+    .btn-gold:hover { background: var(--gold-lt); border-color: var(--gold-lt); transform: translateY(-2px); box-shadow: 0 6px 24px rgba(184,146,74,.35); }
+
+    .btn-dark {
+      background: var(--navy);
+      color: var(--white);
+      border-color: var(--navy);
+    }
+    .btn-dark:hover { background: var(--navy-mid); border-color: var(--navy-mid); transform: translateY(-2px); box-shadow: 0 6px 24px rgba(21,42,78,.3); }
+
+    .btn-outline-dark {
+      background: transparent;
+      color: var(--navy);
+      border-color: var(--navy);
+    }
+    .btn-outline-dark:hover { background: var(--navy); color: var(--white); }
+
+    /* ── Cookie Banner ───────────────────────────────── */
+    #cookie {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 8000;
+      background: var(--ink); color: rgba(255,255,255,.85);
+      padding: 1.25rem 2rem;
+      display: flex; align-items: center; flex-wrap: wrap; gap: 1.25rem;
+      font-size: .8rem; line-height: 1.6;
+      border-top: 1px solid rgba(255,255,255,.08);
+    }
+    #cookie p { margin: 0; flex: 1; min-width: 240px; }
+    #cookie a { color: var(--gold-lt); text-decoration: underline; }
+    .ck-btns { display: flex; gap: .75rem; flex-wrap: wrap; }
+    .ck-yes { background: var(--gold); color: #fff; border: none; padding: .55rem 1.25rem; font-family: var(--sans); font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; cursor: pointer; }
+    .ck-no  { background: transparent; color: rgba(255,255,255,.6); border: 1px solid rgba(255,255,255,.25); padding: .55rem 1.25rem; font-family: var(--sans); font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; cursor: pointer; }
+
+    /* ── Navigation ──────────────────────────────────── */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      padding: 1.5rem 0;
+      transition: all .4s var(--ease);
+    }
+    .nav.solid {
+      background: rgba(13,27,42,.97);
+      backdrop-filter: blur(16px);
+      padding: .9rem 0;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+      box-shadow: 0 2px 24px rgba(0,0,0,.2);
+    }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between; gap: 1.5rem;
+    }
+    .logo-link {
+      display: flex; align-items: center; gap: 1rem;
+      text-decoration: none;
+    }
+    /* Logo placeholder – replace <img> below with your real logo file */
+    .logo-mark {
+      width: 42px; height: 42px;
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .logo-text-wrap { display: flex; flex-direction: column; }
+    .logo-name  { font-family: var(--serif); font-size: 1.15rem; font-weight: 400; color: var(--white); letter-spacing: .04em; line-height: 1.2; }
+    .logo-sub   { font-family: var(--sans); font-size: .58rem; letter-spacing: .18em; text-transform: uppercase; color: rgba(255,255,255,.5); }
+
+    .nav-links {
+      display: flex; align-items: center; gap: .25rem;
+    }
+    .nav-links a {
+      color: rgba(255,255,255,.8);
+      font-size: .72rem;
+      font-weight: 400;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: .5rem 1rem;
+      transition: color .25s;
+    }
+    .nav-links a:hover { color: var(--white); }
+    .nav-cta-link {
+      background: var(--gold) !important;
+      color: var(--white) !important;
+      padding: .55rem 1.25rem !important;
+      letter-spacing: .1em;
+    }
+    .nav-cta-link:hover { background: var(--gold-lt) !important; }
+
+    .hamburger {
+      display: none; flex-direction: column; gap: 5px; cursor: pointer;
+      background: none; border: none; padding: .4rem; z-index: 1100;
+    }
+    .hamburger span { display: block; width: 22px; height: 1px; background: var(--white); transition: all .3s var(--ease); }
+    .hamburger.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+    /* ── Hero ────────────────────────────────────────── */
+    .hero {
+      position: relative;
+      height: 100vh; min-height: 620px;
+      display: flex; align-items: flex-end;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(to top, rgba(13,27,42,.85) 0%, rgba(13,27,42,.3) 50%, rgba(13,27,42,.2) 100%),
+        url('https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=1920&auto=format&fit=crop&q=85') center/cover no-repeat;
+    }
+    .hero-scroll-hint {
+      position: absolute; bottom: 2.5rem; left: 50%; transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: .4rem;
+      color: rgba(255,255,255,.5); font-size: .65rem; letter-spacing: .15em; text-transform: uppercase;
+      z-index: 2;
+      animation: bounce 2s infinite;
+    }
+    .hero-scroll-hint::after {
+      content: '';
+      display: block; width: 1px; height: 36px;
+      background: linear-gradient(to bottom, rgba(255,255,255,.4), transparent);
+      margin-top: .25rem;
+    }
+    @keyframes bounce { 0%,100% { opacity: .5; transform: translateX(-50%) translateY(0); } 50% { opacity: 1; transform: translateX(-50%) translateY(4px); } }
+
+    .hero-content {
+      position: relative; z-index: 2;
+      padding-bottom: 7rem;
+      width: 100%;
+    }
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: .75rem;
+      font-family: var(--sans); font-size: .65rem; font-weight: 500;
+      letter-spacing: .2em; text-transform: uppercase;
+      color: var(--gold-lt);
+      margin-bottom: 1.5rem;
+    }
+    .hero-eyebrow::before {
+      content: ''; display: block; width: 28px; height: 1px; background: var(--gold);
+    }
+    .hero h1 { color: var(--white); max-width: 720px; margin-bottom: 1.75rem; }
+    .hero h1 em { font-style: italic; color: var(--gold-lt); }
+    .hero-sub {
+      font-size: 1rem; color: rgba(255,255,255,.72); max-width: 520px;
+      margin-bottom: 2.5rem; line-height: 1.85; font-weight: 300;
+    }
+    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+    /* ── Story strip ─────────────────────────────────── */
+    .intro-strip {
+      background: var(--cream);
+      padding: 4rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .intro-strip-inner {
+      display: flex; gap: 4rem; align-items: center;
+      flex-wrap: wrap;
+    }
+    .intro-strip-text { flex: 1; min-width: 260px; }
+    .intro-strip-text p { font-size: 1.05rem; color: var(--muted); margin: 0; line-height: 1.9; }
+    .intro-strip-stats {
+      display: flex; gap: 3rem; flex-shrink: 0;
+      flex-wrap: wrap;
+    }
+    .stat { text-align: center; }
+    .stat-num {
+      font-family: var(--serif); font-size: 2.75rem; font-weight: 300;
+      color: var(--navy); line-height: 1; display: block;
+    }
+    .stat-label {
+      font-size: .68rem; letter-spacing: .14em; text-transform: uppercase;
+      color: var(--faint); display: block; margin-top: .35rem;
+    }
+
+    /* ── Two-col story ───────────────────────────────── */
+    .story { background: var(--white); }
+    .story-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center;
+    }
+    .story-img-wrap { position: relative; }
+    .story-img-main {
+      width: 100%; aspect-ratio: 4/5; object-fit: cover;
+    }
+    .story-img-float {
+      position: absolute; bottom: -2rem; right: -2rem;
+      width: 48%; aspect-ratio: 1;
+      object-fit: cover;
+      border: 6px solid var(--white);
+      box-shadow: var(--sh-lg);
+    }
+    .story-text { padding: 2rem 0; }
+    .story-text h2 { margin-bottom: 1.5rem; }
+    .story-text h2 em { font-style: italic; color: var(--ocean); }
+    .story-pull {
+      font-family: var(--serif); font-size: 1.35rem; font-weight: 300; font-style: italic;
+      color: var(--navy); line-height: 1.6;
+      border-left: 2px solid var(--gold); padding-left: 1.5rem;
+      margin: 2rem 0;
+    }
+    .value-row {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: 2.5rem;
+    }
+    .value-item { display: flex; flex-direction: column; gap: .35rem; }
+    .value-item-icon { font-size: 1.4rem; }
+    .value-item-title { font-family: var(--sans); font-size: .78rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--navy); }
+    .value-item-desc { font-size: .88rem; color: var(--muted); line-height: 1.6; }
+
+    /* ── Why us ──────────────────────────────────────── */
+    .why { background: var(--cream); color: var(--text); overflow: hidden; position: relative; }
+    .why-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 0; }
+    .why-item {
+      padding: 3rem 2.5rem;
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      transition: background .3s var(--ease);
+    }
+    .why-item:hover { background: var(--white); }
+    .why-item:nth-child(3n) { border-right: none; }
+    .why-n {
+      font-family: var(--serif); font-size: .9rem; font-weight: 300;
+      color: var(--gold); letter-spacing: .12em;
+      margin-bottom: 1.25rem; display: block;
+    }
+    .why-item h3 { font-size: 1.15rem; font-weight: 400; color: var(--navy); margin-bottom: .75rem; }
+    .why-item p { font-size: .88rem; color: var(--muted); margin: 0; line-height: 1.75; }
+
+    /* ── Reedereien ──────────────────────────────────── */
+    .reedereien { background: var(--cream); }
+
+    .fleet-nav {
+      display: flex; gap: 0; border-bottom: 1px solid var(--border);
+      margin-bottom: 4rem; overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .fleet-nav::-webkit-scrollbar { display: none; }
+    .fleet-btn {
+      padding: 1rem 1.75rem;
+      font-family: var(--sans); font-size: .7rem; font-weight: 500;
+      letter-spacing: .12em; text-transform: uppercase;
+      color: var(--faint); background: none; border: none; cursor: pointer;
+      border-bottom: 2px solid transparent; margin-bottom: -1px;
+      transition: all .25s var(--ease); white-space: nowrap;
+    }
+    .fleet-btn:hover { color: var(--navy); }
+    .fleet-btn.active { color: var(--navy); border-bottom-color: var(--gold); }
+
+    .fleet-panel { display: none; animation: fadeUp .45s var(--ease); }
+    .fleet-panel.active { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+
+    .fleet-info {}
+    .fleet-badge {
+      display: inline-block;
+      font-size: .62rem; letter-spacing: .15em; text-transform: uppercase; font-weight: 500;
+      padding: .35rem .85rem; border: 1px solid var(--border);
+      color: var(--muted); margin-bottom: 1.25rem;
+    }
+    .fleet-info h2 { margin-bottom: 1.25rem; color: var(--navy); }
+    .fleet-info .lead { margin-bottom: 1.25rem; }
+    .fleet-info p { font-size: .92rem; color: var(--muted); }
+    .fleet-features { margin: 1.75rem 0; display: flex; flex-direction: column; gap: .65rem; }
+    .fleet-feat { display: flex; align-items: flex-start; gap: .85rem; font-size: .88rem; color: var(--muted); }
+    .fleet-feat-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--gold); flex-shrink: 0; margin-top: .55rem; }
+    .fleet-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem; }
+
+    .fleet-media {}
+    /* Video */
+    .vid-wrap {
+      position: relative; aspect-ratio: 16/9;
+      background: var(--ink); overflow: hidden;
+    }
+    .vid-thumb {
+      position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+      opacity: .55; transition: opacity .4s;
+    }
+    .vid-wrap:hover .vid-thumb { opacity: .4; }
+    .vid-play {
+      position: absolute; inset: 0;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      cursor: pointer; border: none; background: transparent;
+    }
+    .vid-circle {
+      width: 68px; height: 68px; border-radius: 50%;
+      border: 1.5px solid rgba(255,255,255,.7);
+      display: flex; align-items: center; justify-content: center;
+      transition: all .3s var(--ease);
+      background: rgba(13,27,42,.3);
+    }
+    .vid-wrap:hover .vid-circle { border-color: var(--gold); background: rgba(184,146,74,.15); transform: scale(1.08); }
+    .vid-circle svg { width: 22px; height: 22px; fill: var(--white); margin-left: 3px; }
+    .vid-label { color: rgba(255,255,255,.6); font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; margin-top: .9rem; }
+    .vid-iframe { display: none; position: absolute; inset: 0; }
+    .vid-iframe iframe { width: 100%; height: 100%; border: none; }
+
+    .fleet-quote {
+      margin-top: 1.5rem; padding: 1.5rem;
+      background: var(--parchment);
+      font-family: var(--serif); font-style: italic; font-size: 1rem;
+      color: var(--navy); line-height: 1.7;
+    }
+    .fleet-quote-attr {
+      display: block; margin-top: .75rem;
+      font-family: var(--sans); font-style: normal; font-size: .72rem;
+      letter-spacing: .1em; text-transform: uppercase; color: var(--faint);
+    }
+
+    /* ── Landurlaub ──────────────────────────────────── */
+    .land { background: var(--white); }
+    .land-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; }
+    .land-mosaic { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; gap: 1rem; }
+    .land-img { width: 100%; object-fit: cover; }
+    .land-img--tall { aspect-ratio: 3/4; }
+    .land-img--wide { aspect-ratio: 4/3; }
+    .land-mosaic-col { display: flex; flex-direction: column; gap: 1rem; }
+    .land-mosaic-col:first-child { margin-top: 2rem; }
+    .partner-chip {
+      display: inline-flex; align-items: center; gap: .5rem;
+      border: 1px solid var(--border); padding: .4rem 1rem;
+      font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    /* ── Testimonials ────────────────────────────────── */
+    .testi { background: var(--cream); }
+    .testi-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5px; background: var(--border); }
+    .testi-card { background: var(--white); padding: 2.5rem; }
+    .testi-stars { color: var(--gold); font-size: .85rem; letter-spacing: .1em; margin-bottom: 1.25rem; }
+    .testi-card p { font-family: var(--serif); font-size: 1.05rem; font-weight: 300; font-style: italic; line-height: 1.8; color: var(--text); margin-bottom: 2rem; }
+    .testi-author { display: flex; align-items: center; gap: .9rem; }
+    .testi-av {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: var(--navy); color: var(--gold-lt);
+      font-family: var(--serif); font-size: 1rem; font-weight: 400;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .testi-info strong { display: block; font-size: .85rem; font-weight: 500; color: var(--navy); }
+    .testi-info span { font-size: .75rem; color: var(--faint); }
+
+    /* ── Contact ─────────────────────────────────────── */
+    .contact {
+      background: var(--ink);
+      color: var(--white);
+      position: relative; overflow: hidden;
+    }
+    .contact::before {
+      content: '';
+      position: absolute; top: 0; right: 0;
+      width: 50%; height: 100%;
+      background: url('https://images.unsplash.com/photo-1599458252573-56ae36120de1?w=900&auto=format&fit=crop&q=70') center/cover no-repeat;
+      opacity: .15;
+    }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: start; }
+    .contact-left { position: relative; z-index: 1; }
+    .contact-left h2 { margin-bottom: 1.25rem; }
+    .contact-left h2 em { font-style: italic; color: var(--gold-lt); }
+    .contact-left p { color: rgba(255,255,255,.65); margin-bottom: 2rem; font-size: .92rem; }
+    .contact-channels { display: flex; flex-direction: column; gap: .75rem; }
+    .channel {
+      display: flex; align-items: center; gap: 1rem;
+      padding: 1.1rem 1.25rem;
+      border: 1px solid rgba(255,255,255,.08);
+      background: rgba(255,255,255,.03);
+      transition: all .25s var(--ease);
+      text-decoration: none; color: var(--white);
+    }
+    .channel:hover { border-color: rgba(184,146,74,.5); background: rgba(184,146,74,.07); transform: translateX(4px); }
+    .channel-icon { font-size: 1.4rem; flex-shrink: 0; }
+    .channel strong { display: block; font-size: .88rem; font-weight: 500; margin-bottom: .1rem; }
+    .channel span { font-size: .78rem; color: rgba(255,255,255,.5); }
+
+    .contact-form { position: relative; z-index: 1; }
+    .form-box {
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.1);
+      padding: 2.5rem;
+    }
+    .form-box h3 { font-family: var(--serif); font-size: 1.5rem; font-weight: 300; margin-bottom: 2rem; }
+    .fg { margin-bottom: 1.1rem; }
+    .fg label { display: block; font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.5); margin-bottom: .5rem; }
+    .fg input, .fg select, .fg textarea {
+      width: 100%; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12);
+      color: var(--white); font-family: var(--sans); font-size: .88rem; font-weight: 300;
+      padding: .85rem 1rem; transition: border-color .25s;
+    }
+    .fg input::placeholder, .fg textarea::placeholder { color: rgba(255,255,255,.28); }
+    .fg input:focus, .fg select:focus, .fg textarea:focus { outline: none; border-color: var(--gold); }
+    .fg select option { background: var(--ink); }
+    .fg textarea { resize: vertical; min-height: 90px; }
+    .form-note { font-size: .73rem; color: rgba(255,255,255,.38); margin-top: .9rem; line-height: 1.65; }
+    .form-note a { color: rgba(184,208,224,.7); text-decoration: underline; }
+
+    /* ── WhatsApp float ──────────────────────────────── */
+    .wa-float {
+      position: fixed; bottom: 5rem; right: 1.75rem; z-index: 800;
+      display: flex; flex-direction: column; align-items: flex-end; gap: .5rem;
+    }
+    .wa-tip {
+      background: var(--ink); color: rgba(255,255,255,.85);
+      font-size: .72rem; padding: .35rem .8rem;
+      pointer-events: none; opacity: 0; transform: translateX(6px); transition: all .25s;
+      white-space: nowrap;
+    }
+    .wa-float:hover .wa-tip { opacity: 1; transform: translateX(0); }
+    .wa-btn {
+      width: 52px; height: 52px; border-radius: 50%;
+      background: #25D366; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 16px rgba(37,211,102,.4); text-decoration: none;
+      transition: all .3s var(--ease);
+    }
+    .wa-btn:hover { transform: scale(1.1); box-shadow: 0 6px 24px rgba(37,211,102,.5); }
+    .wa-btn svg { width: 26px; height: 26px; fill: #fff; }
+
+    /* ── Footer ──────────────────────────────────────── */
+    footer { background: var(--ink); color: rgba(255,255,255,.5); padding: 5rem 0 2.5rem; }
+    .foot-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 4rem; }
+    .foot-brand p { font-size: .85rem; line-height: 1.8; margin: 1.25rem 0; color: rgba(255,255,255,.4); }
+    .foot-socials { display: flex; gap: .5rem; margin-top: 1.5rem; }
+    .foot-social {
+      width: 36px; height: 36px;
+      border: 1px solid rgba(255,255,255,.1);
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,.5); font-size: .9rem; text-decoration: none;
+      transition: all .25s;
+    }
+    .foot-social:hover { border-color: var(--gold); color: var(--gold-lt); }
+    .foot-social svg { width: 14px; height: 14px; fill: currentColor; }
+    .foot-col h4 {
+      font-family: var(--sans); font-size: .65rem; font-weight: 500;
+      letter-spacing: .18em; text-transform: uppercase; color: rgba(255,255,255,.3);
+      margin-bottom: 1.25rem;
+    }
+    .foot-links { display: flex; flex-direction: column; gap: .6rem; }
+    .foot-links a { font-size: .82rem; color: rgba(255,255,255,.45); transition: color .2s; }
+    .foot-links a:hover { color: var(--white); }
+    .vermittler {
+      border-top: 1px solid rgba(255,255,255,.06);
+      padding-top: 2rem; margin-top: 1rem;
+      font-size: .75rem; line-height: 1.75; color: rgba(255,255,255,.3);
+    }
+    .foot-bottom {
+      margin-top: 2rem;
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;
+      font-size: .73rem; color: rgba(255,255,255,.25);
+    }
+
+    /* ── Responsive ──────────────────────────────────── */
+    @media (max-width: 1024px) {
+      .story-grid, .land-grid, .contact-grid { grid-template-columns: 1fr; gap: 3.5rem; }
+      .fleet-panel.active { grid-template-columns: 1fr; }
+      .why-grid { grid-template-columns: 1fr 1fr; }
+      .foot-grid { grid-template-columns: 1fr 1fr; }
+      .story-img-float { right: 0; bottom: -1.5rem; }
+    }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-links.open {
+        display: flex; flex-direction: column;
+        position: fixed; inset: 0;
+        background: var(--ink); z-index: 999;
+        align-items: center; justify-content: center; gap: 2rem;
+      }
+      .nav-links.open a { font-size: 1.1rem; }
+      .hamburger { display: flex; }
+      .testi-grid { grid-template-columns: 1fr; }
+      .why-grid { grid-template-columns: 1fr; }
+      .value-row { grid-template-columns: 1fr; }
+      .land-mosaic { grid-template-columns: 1fr 1fr; }
+      .hero-actions { flex-direction: column; }
+      .hero-actions .btn { width: 100%; justify-content: center; }
+      .foot-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .fleet-actions { flex-direction: column; }
+      .fleet-actions .btn { width: 100%; justify-content: center; }
+      .intro-strip-stats { width: 100%; justify-content: space-around; }
+      .contact::before { display: none; }
+    }
+    @media (max-width: 480px) {
+      .fleet-nav { gap: 0; }
+      .fleet-btn { padding: .85rem 1rem; }
+      .land-mosaic { grid-template-columns: 1fr; }
+      .land-mosaic-col:first-child { margin-top: 0; }
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#main" class="skip">Zum Hauptinhalt</a>
+
+  <!-- ── Cookie ──────────────────────────────── -->
+  <div id="cookie" role="dialog" aria-label="Cookie-Hinweis">
+    <p>
+      Wir verwenden Cookies für ein optimales Erlebnis. Bei Akzeptanz können Inhalte wie
+      YouTube-Videos geladen werden. Details in unserer
+      <a href="/datenschutz">Datenschutzerklärung</a>.
+    </p>
+    <div class="ck-btns">
+      <button class="ck-yes" onclick="ckAccept()">Akzeptieren</button>
+      <button class="ck-no"  onclick="ckReject()">Nur notwendige</button>
+    </div>
+  </div>
+
+  <!-- ── Nav ────────────────────────────────── -->
+  <header>
+    <nav class="nav" id="nav" aria-label="Hauptnavigation">
+      <div class="wrap nav-inner">
+        <a href="#" class="logo-link" aria-label="Kreuzfahrtberatung Bärenfänger – Startseite">
+          <!--
+            LOGO: Ersetze die <div class="logo-mark"> durch dein echtes Logo:
+            <img src="logo.png" alt="Kreuzfahrtberatung Bärenfänger" style="height:44px;width:auto;" />
+          -->
+          <div class="logo-mark" aria-hidden="true">⚓</div>
+          <div class="logo-text-wrap">
+            <span class="logo-name">Bärenfänger</span>
+            <span class="logo-sub">Kreuzfahrtberatung</span>
+          </div>
+        </a>
+
+        <button class="hamburger" id="hbg" aria-label="Menü" aria-expanded="false" aria-controls="nav-menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-menu" role="list">
+          <li><a href="#story">Über uns</a></li>
+          <li><a href="#reedereien">Reedereien</a></li>
+          <li><a href="#landurlaub">Landurlaub</a></li>
+          <li><a href="#testimonials">Erfahrungen</a></li>
+          <li><a href="#kontakt" class="nav-cta-link">Beratung anfragen</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ══ HERO ══════════════════════════════════════════ -->
+    <section class="hero" aria-label="Willkommen">
+      <div class="hero-bg" role="img" aria-label="Elegantes Segelschiff auf ruhigem Wasser"></div>
+      <div class="hero-scroll-hint" aria-hidden="true">Entdecken</div>
+
+      <div class="hero-content wrap">
+        <span class="hero-eyebrow">Persönliche Kreuzfahrtberatung</span>
+        <h1>
+          Deine Traumreise —<br />
+          <em>mit echten Freunden</em><br />
+          an deiner Seite.
+        </h1>
+        <p class="hero-sub">
+          Wir sind Orkan &amp; Johannes — leidenschaftliche Kreuzfahrt-Enthusiasten,
+          die das nebenbei machen. Kein Imperium, kein Callcenter —
+          nur echtes Herzblut für jeden unserer Kreuzfahrt-Freunde.
+        </p>
+        <div class="hero-actions">
+          <a href="https://wa.me/message/ZGBSUS54QR75P1"
+             class="btn btn-gold" target="_blank" rel="noopener"
+             aria-label="Per WhatsApp beraten lassen">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Jetzt beraten lassen
+          </a>
+          <a href="#reedereien" class="btn btn-light" aria-label="Reedereien erkunden">
+            Reedereien entdecken
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ INTRO STRIP ════════════════════════════════════ -->
+    <div class="intro-strip" aria-label="Auf einen Blick">
+      <div class="wrap intro-strip-inner">
+        <div class="intro-strip-text">
+          <p>
+            Ob Ultra-Luxus mit <strong>Silversea</strong>, französische Eleganz mit <strong>Ponant</strong>,
+            Abenteuer mit <strong>Expeditions-Schiffen</strong>, romantisches Segeln mit <strong>Star Clippers</strong>,
+            Premium-Design auf <strong>Celebrity</strong> oder Boutique-Destinationen mit <strong>Azamara</strong> —
+            wir finden die Reise, die wirklich zu dir passt.
+          </p>
+        </div>
+        <div class="intro-strip-stats" role="list" aria-label="Kennzahlen">
+          <div class="stat" role="listitem">
+            <span class="stat-num">6</span>
+            <span class="stat-label">Reedereien</span>
+          </div>
+          <div class="stat" role="listitem">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Persönlich</span>
+          </div>
+          <div class="stat" role="listitem">
+            <span class="stat-num">♥</span>
+            <span class="stat-label">Mit Leidenschaft</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ STORY ══════════════════════════════════════════ -->
+    <section class="story sec" id="story" aria-label="Unsere Geschichte">
+      <div class="wrap">
+        <div class="story-grid">
+          <div class="story-img-wrap">
+            <img class="story-img-main"
+              src="https://images.unsplash.com/photo-1599458252573-56ae36120de1?w=800&auto=format&fit=crop&q=80"
+              alt="Orkan auf Kreuzfahrt – die Begeisterung für das Meer"
+              width="800" loading="lazy" />
+            <img class="story-img-float"
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&auto=format&fit=crop&q=80"
+              alt="Türkisblaues Meer – Traumdestination"
+              width="500" loading="lazy" />
+          </div>
+
+          <div class="story-text">
+            <span class="eyebrow">Unsere Geschichte</span>
+            <span class="rule"></span>
+            <h2>Alles begann mit<br /><em>einer Silversea-Fahrt.</em></h2>
+
+            <div class="story-pull" role="blockquote">
+              „Wir machen das nicht für den Umsatz. Wir machen das,
+              weil wir Kreuzfahrten lieben."
+            </div>
+
+            <p class="lead">
+              Wir sind Orkan &amp; Johannes — hauptberuflich anderweitig tätig,
+              aber mit dem Herzen immer auf See. Diese Beratung ist unser
+              Herzens-Projekt.
+            </p>
+            <p style="font-size:.9rem; color:var(--muted);">
+              Das bedeutet für euch: kein desinteressierter Massenverkäufer,
+              sondern echte Enthusiasten, die nachts noch WhatsApp-Nachrichten
+              beantworten, weil eine Frage zur Kabinenauswahl eben wichtig ist.
+              Ihr seid keine Kunden — ihr seid unsere Kreuzfahrt-Freunde.
+            </p>
+
+            <div class="value-row" role="list">
+              <div class="value-item" role="listitem">
+                <span class="value-item-icon" aria-hidden="true">🏠</span>
+                <span class="value-item-title">Kein Callcenter</span>
+                <span class="value-item-desc">Nur wir — direkt, persönlich, ehrlich.</span>
+              </div>
+              <div class="value-item" role="listitem">
+                <span class="value-item-icon" aria-hidden="true">❤️</span>
+                <span class="value-item-title">Ehrlichkeit</span>
+                <span class="value-item-desc">Empfehlungen die passen, nicht solche die Provision bringen.</span>
+              </div>
+              <div class="value-item" role="listitem">
+                <span class="value-item-icon" aria-hidden="true">📱</span>
+                <span class="value-item-title">Immer erreichbar</span>
+                <span class="value-item-desc">Vor, während und nach der Reise.</span>
+              </div>
+              <div class="value-item" role="listitem">
+                <span class="value-item-icon" aria-hidden="true">🌟</span>
+                <span class="value-item-title">Aus Leidenschaft</span>
+                <span class="value-item-desc">Wir reisen selbst — und kennen jede Reederei von innen.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ WHY US ══════════════════════════════════════════ -->
+    <section class="why" aria-label="Warum Kreuzfahrtberatung Bärenfänger">
+      <div class="wrap" style="padding-top:4rem; padding-bottom:1px;">
+        <div style="text-align:center; padding-bottom:3rem;">
+          <span class="eyebrow">Unser Versprechen</span>
+          <span class="rule rule--center"></span>
+          <h2 style="color:var(--navy); max-width:680px; margin:0 auto;">Warum Kreuzfahrtberatung Bärenfänger?</h2>
+        </div>
+      </div>
+      <div class="why-grid" role="list">
+        <div class="why-item" role="listitem">
+          <span class="why-n">01</span>
+          <h3>Kein Skript, kein Druck</h3>
+          <p>Echte Gespräche. Keine Abschluss-Quoten. Nur aufrichtiges Interesse an deiner Traumreise.</p>
+        </div>
+        <div class="why-item" role="listitem">
+          <span class="why-n">02</span>
+          <h3>Wir kennen die Schiffe</h3>
+          <p>Was wir empfehlen, haben wir meist selbst erlebt. Kein Ablesen aus Katalogen.</p>
+        </div>
+        <div class="why-item" role="listitem">
+          <span class="why-n">03</span>
+          <h3>Begleitung von A bis Z</h3>
+          <p>Erste Anfrage, Buchung, Vorfreude, Reise, Heimkehr — in jeder Phase für euch da.</p>
+        </div>
+        <div class="why-item" role="listitem">
+          <span class="why-n">04</span>
+          <h3>Unabhängiger Vermittler</h3>
+          <p>Wir empfehlen nur Reedereien, die wir selbst für gut befinden. Kein AIDA, MSC oder TUI Mein Schiff — bewusste Qualitätsentscheidung, kein Zufall.</p>
+        </div>
+        <div class="why-item" role="listitem">
+          <span class="why-n">05</span>
+          <h3>WhatsApp statt Warteschleife</h3>
+          <p>Eine Nachricht genügt. Direkt zu uns — direkt eine echte Antwort.</p>
+        </div>
+        <div class="why-item" role="listitem">
+          <span class="why-n">06</span>
+          <h3>Kostenlose Beratung</h3>
+          <p>Unsere Beratung kostet euch gar nichts. Wir werden von den Reedereien vergütet.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ REEDEREIEN ═══════════════════════════════════════ -->
+    <section class="reedereien sec" id="reedereien" aria-label="Unsere Reedereien">
+      <div class="wrap">
+        <div class="section-head" style="margin-bottom:2.5rem;">
+          <span class="eyebrow">Spezialisierungen</span>
+          <span class="rule"></span>
+          <h2 style="color:var(--navy);">Unsere Reedereien</h2>
+          <p class="lead" style="margin-top:.75rem; max-width:600px;">
+            Fünf außergewöhnliche Reedereien — jede mit ihrer eigenen Seele.
+            Wir kennen sie alle und helfen dir, die richtige für dich zu finden.
+          </p>
+        </div>
+
+        <div class="fleet-nav" role="tablist" aria-label="Reederei wählen">
+          <button class="fleet-btn active" role="tab" aria-selected="true"  aria-controls="fp-sc" id="ft-sc" onclick="switchFleet('sc')">Silversea Classic</button>
+          <button class="fleet-btn"        role="tab" aria-selected="false" aria-controls="fp-se" id="ft-se" onclick="switchFleet('se')">Silversea Expedition</button>
+          <button class="fleet-btn"        role="tab" aria-selected="false" aria-controls="fp-st" id="ft-st" onclick="switchFleet('st')">Star Clippers</button>
+          <button class="fleet-btn"        role="tab" aria-selected="false" aria-controls="fp-ce" id="ft-ce" onclick="switchFleet('ce')">Celebrity Cruises</button>
+          <button class="fleet-btn"        role="tab" aria-selected="false" aria-controls="fp-az" id="ft-az" onclick="switchFleet('az')">Azamara</button>
+          <button class="fleet-btn"        role="tab" aria-selected="false" aria-controls="fp-po" id="ft-po" onclick="switchFleet('po')">Ponant</button>
+        </div>
+
+        <!-- Silversea Classic -->
+        <div class="fleet-panel active" id="fp-sc" role="tabpanel" aria-labelledby="ft-sc">
+          <div class="fleet-info">
+            <span class="fleet-badge">Ultra-Luxus · All-Inclusive</span>
+            <h2 style="color:var(--navy);">Silversea Classic</h2>
+            <p class="lead">Das Luxussegment schlechthin — kleine, exklusive Schiffe mit allerhöchstem Service auf See.</p>
+            <p style="font-size:.9rem; color:var(--muted);">Silversea ist die Reederei, die unsere Leidenschaft für Kreuzfahrten entfacht hat. Alles inklusive, persönlicher Butler, Weltklasse-Küche — jede Fahrt wird zur unvergesslichen Erinnerung.</p>
+            <div class="fleet-features">
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>All-inclusive: Mahlzeiten, Weine, Spirits, viele Ausflüge</span></div>
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Kleine bis mittelgroße Schiffe — von 200 bis ca. 730 Gästen (Silver Nova/Ray)</span></div>
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Weltklasse-Restaurants: japanisch bis mediterran</span></div>
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Butler-Service in allen Suiten</span></div>
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Mittelmeer, Karibik, Asien &amp; weltweite Routen</span></div>
+            </div>
+            <div class="fleet-actions">
+              <a href="https://wa.me/message/ZGBSUS54QR75P1" class="btn btn-gold" target="_blank" rel="noopener" aria-label="Silversea Beratung anfragen">Silversea anfragen</a>
+              <a href="#kontakt" class="btn btn-outline-dark">Mehr erfahren</a>
+            </div>
+          </div>
+          <div class="fleet-media">
+            <div class="vid-wrap" id="vw-sc">
+              <img class="vid-thumb" src="https://images.unsplash.com/photo-1548574505-5e239809ee19?w=800&auto=format&fit=crop&q=70" alt="Silversea Kreuzfahrtschiff" loading="lazy" />
+              <button class="vid-play" onclick="playVid('sc','DEIN_VIDEO_ID')" aria-label="Silversea Video abspielen">
+                <div class="vid-circle" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+                </div>
+                <span class="vid-label">Unser Silversea-Erlebnis</span>
+              </button>
+              <div class="vid-iframe" id="vi-sc"></div>
+            </div>
+            <div class="fleet-quote" role="blockquote">
+              Das war das erste Mal, dass wir verstanden haben, was Kreuzfahrt wirklich sein kann. Silversea hat alles verändert.
+              <span class="fleet-quote-attr">— Orkan, Kreuzfahrtberatung Bärenfänger</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Silversea Expedition -->
+        <div class="fleet-panel" id="fp-se" role="tabpanel" aria-labelledby="ft-se">
+          <div class="fleet-info">
+            <span class="fleet-badge">Expedition · Abenteuer · Polarregionen</span>
+            <h2 style="color:var(--navy);">Silversea Expedition</h2>
+            <p class="lead">Für Abenteurer: Silversea Expedition bringt euch dorthin, wo andere Schiffe nicht fahren können.</p>
+            <p style="font-size:.9rem; color:var(--muted);">Arktis, Antarktis, Galápagos, Amazonas — luxuriöses Abenteuer par excellence. Expedition-Ships mit Zodiacs, Wissenschaftlern an Bord und allem Silversea-Komfort auch in den unwirtlichsten Regionen.</p>
+            <div class="fleet-features">
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Antarktis, Arktis, Galápagos &amp; remote Destinationen</span></div>
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Expedition-Team: Biologen, Geologen, Kulturexperten</span></div>
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Zodiac-Ausflüge und Landerkundungen inklusive</span></div>
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>ICE-Class Schiffe — sicher in Polargewässern</span></div>
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Silversea-Luxus auch am Ende der Welt</span></div>
+            </div>
+            <div class="fleet-actions">
+              <a href="https://wa.me/message/ZGBSUS54QR75P1" class="btn btn-gold" target="_blank" rel="noopener">Expedition anfragen</a>
+              <a href="#kontakt" class="btn btn-outline-dark">Mehr erfahren</a>
+            </div>
+          </div>
+          <div class="fleet-media">
+            <div class="vid-wrap" id="vw-se">
+              <img class="vid-thumb" src="https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=800&auto=format&fit=crop&q=70" alt="Eisberg Antarktis Silversea Expedition" loading="lazy" />
+              <button class="vid-play" onclick="playVid('se','DEIN_VIDEO_ID')" aria-label="Silversea Expedition Video abspielen">
+                <div class="vid-circle" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+                <span class="vid-label">Expedition-Erlebnis ansehen</span>
+              </button>
+              <div class="vid-iframe" id="vi-se"></div>
+            </div>
+            <div class="fleet-quote" role="blockquote">
+              Pinguine in der Antarktis sehen — und danach zurück auf das Schiff in euer Luxus-Apartment. So geht Abenteuer.
+              <span class="fleet-quote-attr">— Orkan über Silversea Expedition</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Star Clippers -->
+        <div class="fleet-panel" id="fp-st" role="tabpanel" aria-labelledby="ft-st">
+          <div class="fleet-info">
+            <span class="fleet-badge">Segeln · Romantik · Authentisch</span>
+            <h2 style="color:var(--navy);">Star Clippers</h2>
+            <p class="lead">Unter weißen Segeln durch türkisblaues Wasser — Kreuzfahrt romantisch, authentisch und unvergesslich.</p>
+            <p style="font-size:.9rem; color:var(--muted);">Diese traumhaften Windjammer verbinden den Charme klassischer Segelschiffe mit modernem Komfort. Kleinere Häfen, echte Atmosphäre — für die, die Kreuzfahrt nicht als Massenphänomen verstehen.</p>
+            <div class="fleet-features">
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Echte Hochsee-Windjammer — bis zu 5.500 m² Segelfläche</span></div>
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Kleinere, charmante Häfen die große Schiffe nicht anlaufen</span></div>
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Entspannt, persönlich, ohne Massentourismus</span></div>
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Mittelmeer, Karibik, Indischer Ozean</span></div>
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Wassersport direkt vom Schiff: Schnorcheln, Kajak, Segeln</span></div>
+            </div>
+            <div class="fleet-actions">
+              <a href="https://wa.me/message/ZGBSUS54QR75P1" class="btn btn-gold" target="_blank" rel="noopener">Star Clippers anfragen</a>
+              <a href="#kontakt" class="btn btn-outline-dark">Mehr erfahren</a>
+            </div>
+          </div>
+          <div class="fleet-media">
+            <div class="vid-wrap" id="vw-st">
+              <img class="vid-thumb" src="https://images.unsplash.com/photo-1534447677768-be436bb09401?w=800&auto=format&fit=crop&q=70" alt="Segelschiff Star Clippers" loading="lazy" />
+              <button class="vid-play" onclick="playVid('st','DEIN_VIDEO_ID')" aria-label="Star Clippers Video abspielen">
+                <div class="vid-circle" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+                <span class="vid-label">Segelerlebnis ansehen</span>
+              </button>
+              <div class="vid-iframe" id="vi-st"></div>
+            </div>
+            <div class="fleet-quote" role="blockquote">
+              Wind in den Segeln, Sterne über euch, kein Land in Sicht — und das in absolutem Komfort. Star Clippers ist Magie.
+              <span class="fleet-quote-attr">— Orkan über Star Clippers</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Celebrity -->
+        <div class="fleet-panel" id="fp-ce" role="tabpanel" aria-labelledby="ft-ce">
+          <div class="fleet-info">
+            <span class="fleet-badge">Premium · Modern · Stilvoll</span>
+            <h2 style="color:var(--navy);">Celebrity Cruises</h2>
+            <p class="lead">Modern, stilvoll und perfekt für alle, die Premium-Kreuzfahrt mit lebhafter Atmosphäre verbinden möchten.</p>
+            <p style="font-size:.9rem; color:var(--muted);">Celebrity steht für modernes Design, exzellentes Essen und eine vibrierende Bordatmosphäre. Ideal für alle, die gehobene Qualität ohne steife Förmlichkeit wollen.</p>
+            <div class="fleet-features">
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Edge-Klasse Schiffe: futuristisches, preisgekröntes Design</span></div>
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Kuratierte Restaurant-Konzepte von Spitzenköchen</span></div>
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Magic Carpet — einzigartiger schwebender Deck-Bereich</span></div>
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Premium All-Inclusive Pakete verfügbar</span></div>
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Europa, Karibik, Asien &amp; Galápagos</span></div>
+            </div>
+            <div class="fleet-actions">
+              <a href="https://wa.me/message/ZGBSUS54QR75P1" class="btn btn-gold" target="_blank" rel="noopener">Celebrity anfragen</a>
+              <a href="#kontakt" class="btn btn-outline-dark">Mehr erfahren</a>
+            </div>
+          </div>
+          <div class="fleet-media">
+            <div class="vid-wrap" id="vw-ce">
+              <img class="vid-thumb" src="https://images.unsplash.com/photo-1582561971772-1a76b3f60e3d?w=800&auto=format&fit=crop&q=70" alt="Celebrity Cruises modernes Schiff" loading="lazy" />
+              <button class="vid-play" onclick="playVid('ce','DEIN_VIDEO_ID')" aria-label="Celebrity Cruises Video abspielen">
+                <div class="vid-circle" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+                <span class="vid-label">Celebrity Erlebnis ansehen</span>
+              </button>
+              <div class="vid-iframe" id="vi-ce"></div>
+            </div>
+            <div class="fleet-quote" role="blockquote">
+              Celebrity ist für alle, die Stil lieben aber nicht steif sein wollen. Die perfekte Mischung aus Niveau und Lebensfreude.
+              <span class="fleet-quote-attr">— Orkan über Celebrity Cruises</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Azamara -->
+        <div class="fleet-panel" id="fp-az" role="tabpanel" aria-labelledby="ft-az">
+          <div class="fleet-info">
+            <span class="fleet-badge">Boutique · Destinationen · Overnight</span>
+            <h2 style="color:var(--navy);">Azamara</h2>
+            <p class="lead">Azamara geht dort hin, wo andere aufhören — mit kleineren Schiffen in unentdeckte Häfen, für echte Entdecker.</p>
+            <p style="font-size:.9rem; color:var(--muted);">Längere Aufenthalte in Häfen, Nachtanker in besonderen Städten, kleine Schiffe für authentische Erlebnisse. Für alle die Destinationen wirklich erleben wollen — nicht nur kurz vorbeifahren.</p>
+            <div class="fleet-features">
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Overnight-Stays &amp; Late-Night-Departures in Top-Häfen</span></div>
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Boutique-Schiffe mit ca. 690 Gästen — sehr persönlich</span></div>
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>AzAmazing Evenings: exklusive lokale Abende an Land</span></div>
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Alkohol, Trinkgelder &amp; mehr inklusive</span></div>
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Europa, Asien, Naher Osten &amp; mehr</span></div>
+            </div>
+            <div class="fleet-actions">
+              <a href="https://wa.me/message/ZGBSUS54QR75P1" class="btn btn-gold" target="_blank" rel="noopener">Azamara anfragen</a>
+              <a href="#kontakt" class="btn btn-outline-dark">Mehr erfahren</a>
+            </div>
+          </div>
+          <div class="fleet-media">
+            <div class="vid-wrap" id="vw-az">
+              <img class="vid-thumb" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&auto=format&fit=crop&q=70" alt="Azamara Boutique Kreuzfahrt" loading="lazy" />
+              <button class="vid-play" onclick="playVid('az','DEIN_VIDEO_ID')" aria-label="Azamara Video abspielen">
+                <div class="vid-circle" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+                <span class="vid-label">Azamara Erlebnis ansehen</span>
+              </button>
+              <div class="vid-iframe" id="vi-az"></div>
+            </div>
+            <div class="fleet-quote" role="blockquote">
+              Santorini nachts im Mondlicht sehen während alle anderen schon wieder weg sind — das ist Azamara.
+              <span class="fleet-quote-attr">— Orkan über Azamara</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- Ponant -->
+        <div class="fleet-panel" id="fp-po" role="tabpanel" aria-labelledby="ft-po">
+          <div class="fleet-info">
+            <span class="fleet-badge">Französische Eleganz · Expedition · Ultra-Luxus</span>
+            <h2 style="color:var(--navy);">Ponant</h2>
+            <p class="lead">Die französische Antwort auf Luxus-Kreuzfahrt — elegant, persönlich und mit einem unvergleichlichen Sinn für Entdeckergeist.</p>
+            <p style="font-size:.9rem; color:var(--muted);">Ponant verbindet französische Raffinesse mit echtem Expeditions-Spirit. Kleine Schiffe, außergewöhnliche Destinationen — von der Arktis bis zur Südsee — und ein Service, der sich wie ein privates Boutique-Hotel anfühlt. Wer Ponant einmal erlebt hat, sucht nichts anderes mehr.</p>
+            <div class="fleet-features">
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Kleine Luxusschiffe mit 184 bis max. 270 Gästen — höchste Exklusivität</span></div>
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Klassische Kreuzfahrten &amp; echte Expeditionen weltweit</span></div>
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Französische Küche &amp; Weinkultur an Bord</span></div>
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Le Commandant Charcot: Hybrid-Eisbrecher für Polarexpeditionen</span></div>
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Arktis, Antarktis, Polynesien, Mittelmeer &amp; viele mehr</span></div>
+            </div>
+            <div class="fleet-actions">
+              <a href="https://wa.me/message/ZGBSUS54QR75P1" class="btn btn-gold" target="_blank" rel="noopener" aria-label="Ponant Beratung anfragen">Ponant anfragen</a>
+              <a href="#kontakt" class="btn btn-outline-dark">Mehr erfahren</a>
+            </div>
+          </div>
+          <div class="fleet-media">
+            <div class="vid-wrap" id="vw-po">
+              <img class="vid-thumb" src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&auto=format&fit=crop&q=70" alt="Ponant Expeditionsschiff in einem Fjord" loading="lazy" />
+              <button class="vid-play" onclick="playVid('po','DEIN_VIDEO_ID')" aria-label="Ponant Video abspielen">
+                <div class="vid-circle" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+                <span class="vid-label">Ponant Erlebnis ansehen</span>
+              </button>
+              <div class="vid-iframe" id="vi-po"></div>
+            </div>
+            <div class="fleet-quote" role="blockquote">
+              Ponant ist Frankreich auf See — Eleganz, Savoir-vivre und Entdeckergeist in einem. Für uns eine der schönsten Reedereien der Welt.
+              <span class="fleet-quote-attr">— Orkan &amp; Johannes über Ponant</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ LANDURLAUB ══════════════════════════════════════ -->
+    <section class="land sec" id="landurlaub" aria-label="Landurlaub und Hotels">
+      <div class="wrap">
+        <div class="land-grid">
+          <div>
+            <div style="display:flex; gap:.5rem; flex-wrap:wrap; margin-bottom:1rem;">
+              <div class="partner-chip" aria-label="vtours Partner"><span>🤝</span> vtours</div>
+              <div class="partner-chip" aria-label="Barceló Partner"><span>🏨</span> Barceló Hotels</div>
+            </div>
+            <span class="eyebrow">Mehr als Kreuzfahrt</span>
+            <span class="rule"></span>
+            <h2 style="color:var(--navy);">Manchmal führt der<br />Traumurlaub auch an Land.</h2>
+            <p class="lead" style="margin-top:1.25rem;">
+              Über unsere Partner <strong>vtours</strong> und <strong>Barceló Hotels</strong> vermitteln
+              wir auch traumhafte Hotelreisen und Landurlaube — mit demselben persönlichen Service.
+            </p>
+            <p style="font-size:.9rem; color:var(--muted); margin-top:1rem;">
+              Besonders am Herzen liegt uns dabei die Luxusmarke
+              <strong>Royal Hideaway</strong> im Barceló Portfolio — exklusive Adults-only-Resorts
+              an den schönsten Stränden der Welt. Ob Teneriffa, Cancún oder Antigua:
+              hier erwartet euch höchster Komfort, Ruhe und echte Verwöhn-Atmosphäre.
+              Und manchmal kombinieren wir auch — Kreuzfahrt hin, Royal Hideaway zurück.
+            </p>
+            <div style="margin-top:2rem;">
+              <a href="https://wa.me/message/ZGBSUS54QR75P1" class="btn btn-dark" target="_blank" rel="noopener" aria-label="Landurlaub anfragen">Landurlaub anfragen</a>
+            </div>
+          </div>
+
+          <div class="land-mosaic" role="list" aria-label="Reiseziele">
+            <div class="land-mosaic-col">
+              <img class="land-img land-img--tall" role="listitem"
+                src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=500&auto=format&fit=crop&q=80"
+                alt="Toskana – Weingut und Hügel" loading="lazy" width="500" />
+              <img class="land-img land-img--wide" role="listitem"
+                src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=500&auto=format&fit=crop&q=80"
+                alt="Japan – Tempel bei Sonnenaufgang" loading="lazy" width="500" />
+            </div>
+            <div class="land-mosaic-col">
+              <img class="land-img land-img--wide" role="listitem"
+                src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=500&auto=format&fit=crop&q=80"
+                alt="Malediven – Wasservilla" loading="lazy" width="500" />
+              <img class="land-img land-img--tall" role="listitem"
+                src="https://images.unsplash.com/photo-1473625247510-8ceb1760943f?w=500&auto=format&fit=crop&q=80"
+                alt="Santorini – weiße Häuser am Hang" loading="lazy" width="500" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ TESTIMONIALS ════════════════════════════════════ -->
+    <section class="testi sec" id="testimonials" aria-label="Erfahrungen unserer Kreuzfahrt-Freunde">
+      <div class="wrap" style="margin-bottom:3rem;">
+        <div style="text-align:center;">
+          <span class="eyebrow">Stimmen unserer Kreuzfahrt-Freunde</span>
+          <span class="rule rule--center"></span>
+          <h2 style="color:var(--navy);">Was sie sagen</h2>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="testi-grid" role="list">
+          <article class="testi-card" role="listitem">
+            <div class="testi-stars" aria-label="5 von 5 Sternen">★★★★★</div>
+            <p>„Orkan war wirklich ehrlich und hat uns alles geduldig erklärt. Er hat uns nicht gedrängt und uns die Optionen gegeben, die wirklich zu uns gepasst haben. Die Silversea-Reise war perfekt!"</p>
+            <div class="testi-author">
+              <div class="testi-av" aria-hidden="true">LP</div>
+              <div class="testi-info">
+                <strong>Leonhard Pütz</strong>
+                <span>Silversea Classic, Mittelmeer</span>
+              </div>
+            </div>
+          </article>
+          <article class="testi-card" role="listitem">
+            <div class="testi-stars" aria-label="5 von 5 Sternen">★★★★★</div>
+            <p>„Von der Buchung bis nach der Kreuzfahrt war er für uns da. Zu jeder noch so unbedeutenden Frage stand er mit Rat und Tat zur Seite. Wir buchen nie wieder woanders!"</p>
+            <div class="testi-author">
+              <div class="testi-av" aria-hidden="true">SM</div>
+              <div class="testi-info">
+                <strong>Seray Maier</strong>
+                <span>Celebrity Edge, Karibik</span>
+              </div>
+            </div>
+          </article>
+          <article class="testi-card" style="background:var(--navy); display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:2.5rem;" role="listitem" aria-label="Platz für deine Bewertung">
+            <div style="font-size:2.5rem; margin-bottom:1rem; opacity:.4;" aria-hidden="true">⭐</div>
+            <p style="font-family:var(--serif); font-style:italic; font-size:1rem; color:rgba(255,255,255,.7); margin-bottom:1.5rem;">
+              Deine Erfahrung könnte hier stehen.<br />Teile sie mit uns — wir freuen uns über jedes Feedback!
+            </p>
+            <a href="https://wa.me/message/ZGBSUS54QR75P1" class="btn btn-gold" target="_blank" rel="noopener" aria-label="Bewertung teilen" style="font-size:.72rem;">
+              Erfahrung teilen
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ CONTACT ═════════════════════════════════════════ -->
+    <section class="contact sec" id="kontakt" aria-label="Kontakt und Beratungsanfrage">
+      <div class="wrap">
+        <div class="contact-grid">
+          <div class="contact-left">
+            <span class="eyebrow" style="color:var(--gold-lt);">Schreib uns</span>
+            <span class="rule"></span>
+            <h2>Lass uns deine<br /><em>Traumreise planen.</em></h2>
+            <p>Kein Formular-Dschungel, keine Warteschleife. Einfach direkt zu uns — wir antworten persönlich, schnell und mit echter Begeisterung.</p>
+
+            <div class="contact-channels" role="list" aria-label="Kontaktmöglichkeiten">
+              <a href="https://wa.me/message/ZGBSUS54QR75P1" class="channel" role="listitem" target="_blank" rel="noopener" aria-label="WhatsApp Chat">
+                <span class="channel-icon" aria-hidden="true">💬</span>
+                <div><strong>WhatsApp — am schnellsten</strong><span>Direkt mit Orkan chatten</span></div>
+              </a>
+              <a href="mailto:orkan@bfaenger.de" class="channel" role="listitem" aria-label="E-Mail senden">
+                <span class="channel-icon" aria-hidden="true">✉️</span>
+                <div><strong>orkan@bfaenger.de</strong><span>Für ausführliche Anfragen</span></div>
+              </a>
+              <a href="https://www.instagram.com/kreuzfahrtberatungbfaenger" class="channel" role="listitem" target="_blank" rel="noopener" aria-label="Instagram">
+                <span class="channel-icon" aria-hidden="true">📸</span>
+                <div><strong>Instagram</strong><span>@kreuzfahrtberatungbfaenger</span></div>
+              </a>
+              <a href="https://www.tiktok.com/@orkan82" class="channel" role="listitem" target="_blank" rel="noopener" aria-label="TikTok">
+                <span class="channel-icon" aria-hidden="true">🎵</span>
+                <div><strong>TikTok</strong><span>@orkan82 — Reisevideos &amp; Tipps</span></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <div class="form-box">
+              <h3>Beratung anfragen</h3>
+              <form action="mailto:orkan@bfaenger.de" method="post" enctype="text/plain" aria-label="Beratungsanfrage">
+                <div class="fg">
+                  <label for="f-name">Dein Name</label>
+                  <input type="text" id="f-name" name="name" placeholder="Maria Mustermann" required autocomplete="name" aria-required="true" />
+                </div>
+                <div class="fg">
+                  <label for="f-email">E-Mail Adresse</label>
+                  <input type="email" id="f-email" name="email" placeholder="maria@beispiel.de" required autocomplete="email" aria-required="true" />
+                </div>
+                <div class="fg">
+                  <label for="f-interesse">Interesse an</label>
+                  <select id="f-interesse" name="interesse" aria-label="Reiseart wählen">
+                    <option value="">— Bitte wählen —</option>
+                    <option>Silversea Classic</option>
+                    <option>Silversea Expedition</option>
+                    <option>Star Clippers</option>
+                    <option>Celebrity Cruises</option>
+                    <option>Azamara</option>
+                    <option>Landurlaub / Hotel</option>
+                    <option>Allgemeine Beratung</option>
+                  </select>
+                </div>
+                <div class="fg">
+                  <label for="f-msg">Deine Nachricht</label>
+                  <textarea id="f-msg" name="nachricht" placeholder="Erzähl uns von deinem Traumurlaub — kein Gedanke ist zu klein!"></textarea>
+                </div>
+                <button type="submit" class="btn btn-gold" style="width:100%; justify-content:center;" aria-label="Anfrage senden">
+                  Anfrage senden
+                </button>
+                <p class="form-note">
+                  Deine Daten werden ausschließlich zur Bearbeitung deiner Anfrage verwendet und nicht an Dritte weitergegeben.
+                  Details in unserer <a href="/datenschutz">Datenschutzerklärung</a>.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── WhatsApp Float ────────────────────── -->
+  <div class="wa-float" aria-label="Schnellkontakt WhatsApp">
+    <span class="wa-tip" aria-hidden="true">Jetzt chatten</span>
+    <a href="https://wa.me/message/ZGBSUS54QR75P1" class="wa-btn"
+       target="_blank" rel="noopener" aria-label="Per WhatsApp mit Orkan chatten">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+  </div>
+
+  <!-- ── Footer ────────────────────────────── -->
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <div style="display:flex; align-items:center; gap:.85rem; margin-bottom:.25rem;">
+            <div class="logo-mark" style="border-color:rgba(255,255,255,.15); font-size:1rem;" aria-hidden="true">⚓</div>
+            <div>
+              <span class="logo-name" style="font-size:1.1rem; display:block;">Bärenfänger</span>
+              <span class="logo-sub">Kreuzfahrtberatung</span>
+            </div>
+          </div>
+          <p>Leidenschaftliche Kreuzfahrt-Enthusiasten, die ihre Liebe zum Meer zum Herzens-Projekt gemacht haben. Für uns bist du kein Kunde — du bist unser Kreuzfahrt-Freund.</p>
+          <div class="foot-socials" role="list" aria-label="Social Media">
+            <a href="https://www.instagram.com/kreuzfahrtberatungbfaenger" class="foot-social" role="listitem" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@orkan82" class="foot-social" role="listitem" target="_blank" rel="noopener" aria-label="TikTok">
+              <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.77a8.17 8.17 0 004.78 1.52V6.85a4.85 4.85 0 01-1.01-.16z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/share/19kr7nM6Pu" class="foot-social" role="listitem" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="foot-col">
+          <h4>Reedereien</h4>
+          <ul class="foot-links" role="list">
+            <li><a href="#reedereien" onclick="switchFleet('sc')">Silversea Classic</a></li>
+            <li><a href="#reedereien" onclick="switchFleet('se')">Silversea Expedition</a></li>
+            <li><a href="#reedereien" onclick="switchFleet('st')">Star Clippers</a></li>
+            <li><a href="#reedereien" onclick="switchFleet('ce')">Celebrity Cruises</a></li>
+            <li><a href="#reedereien" onclick="switchFleet('az')">Azamara</a></li>
+            <li><a href="#reedereien" onclick="switchFleet('po')">Ponant</a></li>
+          </ul>
+        </div>
+
+        <div class="foot-col">
+          <h4>Navigation</h4>
+          <ul class="foot-links" role="list">
+            <li><a href="#story">Über uns</a></li>
+            <li><a href="#landurlaub">Landurlaub &amp; Hotels</a></li>
+            <li><a href="#testimonials">Erfahrungen</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div class="foot-col">
+          <h4>Rechtliches</h4>
+          <ul class="foot-links" role="list">
+            <li><a href="/impressum">Impressum</a></li>
+            <li><a href="/datenschutz">Datenschutzerklärung</a></li>
+            <li><a href="#" onclick="document.getElementById('cookie').style.display='flex';return false;">Cookie-Einstellungen</a></li>
+            <li><a href="/barrierefreiheit">Barrierefreiheit</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="vermittler" role="note" aria-label="Rechtlicher Hinweis">
+        <strong style="color:rgba(255,255,255,.45);">Hinweis zur Vermittlerrolle:</strong>
+        Kreuzfahrtberatung Bärenfänger ist ein unabhängiger Reisevermittler und nicht Reiseveranstalter.
+        Wir vermitteln Reiseleistungen der jeweiligen Reedereien und Reiseveranstalter (Silversea, Ponant,
+        Star Clippers, Celebrity Cruises, Azamara, vtours sowie Barceló Hotels / Royal Hideaway).
+        Vertragspartner für Ihre Buchung ist ausschließlich die jeweilige Reederei bzw. der Reiseveranstalter.
+        Die Vermittlung erfolgt im Namen und auf Rechnung der Leistungsträger.
+      </div>
+
+      <div class="foot-bottom">
+        <p>© 2025 Kreuzfahrtberatung Bärenfänger · Alle Rechte vorbehalten</p>
+        <p>Mit ❤️ &amp; ⚓ — weil Reisen das Leben schöner macht.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── JavaScript ────────────────────────── -->
+  <script>
+    // Navbar scroll
+    const nav = document.getElementById('nav');
+    addEventListener('scroll', () => nav.classList.toggle('solid', scrollY > 60), { passive: true });
+
+    // Hamburger
+    const hbg = document.getElementById('hbg');
+    const menu = document.getElementById('nav-menu');
+    hbg.addEventListener('click', () => {
+      const open = menu.classList.toggle('open');
+      hbg.classList.toggle('open', open);
+      hbg.setAttribute('aria-expanded', open);
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      menu.classList.remove('open');
+      hbg.classList.remove('open');
+      hbg.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }));
+
+    // Fleet tabs
+    function switchFleet(id) {
+      document.querySelectorAll('.fleet-btn').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+      document.querySelectorAll('.fleet-panel').forEach(p => p.classList.remove('active'));
+      const btn = document.getElementById('ft-' + id);
+      const pnl = document.getElementById('fp-' + id);
+      if (btn) { btn.classList.add('active'); btn.setAttribute('aria-selected','true'); }
+      if (pnl) pnl.classList.add('active');
+    }
+
+    // Keyboard tab navigation
+    document.querySelectorAll('.fleet-btn').forEach((b, i, all) => {
+      b.addEventListener('keydown', e => {
+        let ni;
+        if (e.key === 'ArrowRight') ni = (i+1) % all.length;
+        if (e.key === 'ArrowLeft')  ni = (i-1+all.length) % all.length;
+        if (ni !== undefined) { all[ni].focus(); all[ni].click(); }
+      });
+    });
+
+    // DSGVO YouTube: only load after user click
+    function playVid(id, videoId) {
+      if (videoId === 'DEIN_VIDEO_ID') {
+        alert('Tipp für die Einrichtung:\nErsetze "DEIN_VIDEO_ID" mit deiner echten YouTube Video-ID.\nBeispiel: Bei https://youtu.be/abc123 ist "abc123" die ID.');
+        return;
+      }
+      const wrap = document.getElementById('vw-' + id);
+      const ifr  = document.getElementById('vi-' + id);
+      if (!wrap || !ifr) return;
+      wrap.querySelector('.vid-play').style.display = 'none';
+      wrap.querySelector('.vid-thumb').style.display = 'none';
+      ifr.style.display = 'block';
+      ifr.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + videoId + '?autoplay=1&rel=0&modestbranding=1" title="Kreuzfahrtberatung Bärenfänger Video" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe>';
+    }
+
+    // Cookie
+    function ckAccept() { document.getElementById('cookie').style.display='none'; localStorage.setItem('ck','yes'); }
+    function ckReject()  { document.getElementById('cookie').style.display='none'; localStorage.setItem('ck','no'); }
+    if (localStorage.getItem('ck')) document.getElementById('cookie').style.display='none';
+  </script>
+</body>
+</html>
