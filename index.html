@@ -642,8 +642,8 @@
           -->
           <div class="logo-mark" aria-hidden="true">⚓</div>
           <div class="logo-text-wrap">
-            <span class="logo-name">Bärenfänger</span>
             <span class="logo-sub">Kreuzfahrtberatung</span>
+            <span class="logo-name">Bärenfänger</span>
           </div>
         </a>
 
@@ -677,9 +677,8 @@
           an deiner Seite.
         </h1>
         <p class="hero-sub">
-          Wir sind Orkan &amp; Johannes — leidenschaftliche Kreuzfahrt-Enthusiasten,
-          die das nebenbei machen. Kein Imperium, kein Callcenter —
-          nur echtes Herzblut für jeden unserer Kreuzfahrt-Freunde.
+          Wir sind Orkan &amp; Johannes — und Kreuzfahrt ist nicht unser Job, sondern unsere Leidenschaft.
+          Kein Imperium, kein Callcenter — nur echtes Herzblut und absolute Hingabe für jeden unserer Kreuzfahrt-Freunde.
         </p>
         <div class="hero-actions">
           <a href="https://wa.me/message/ZGBSUS54QR75P1"
@@ -824,8 +823,8 @@
         </div>
         <div class="why-item" role="listitem">
           <span class="why-n">06</span>
-          <h3>Kostenlose Beratung</h3>
-          <p>Unsere Beratung kostet euch gar nichts. Wir werden von den Reedereien vergütet.</p>
+          <h3>Kostenlos — plus On Board Credit</h3>
+          <p>Unsere Beratung kostet euch gar nichts. Und bei Buchung geben wir euch gerne ein On Board Guthaben (OBC) mit auf den Weg — als kleines Dankeschön von uns.</p>
         </div>
       </div>
     </section>
@@ -1028,8 +1027,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
         <!-- Ponant -->
         <div class="fleet-panel" id="fp-po" role="tabpanel" aria-labelledby="ft-po">
@@ -1069,52 +1066,82 @@
     </section>
 
     <!-- ══ LANDURLAUB ══════════════════════════════════════ -->
-    <section class="land sec" id="landurlaub" aria-label="Landurlaub und Hotels">
+    <section class="reedereien sec" id="landurlaub" aria-label="Landurlaub und Hotels">
       <div class="wrap">
-        <div class="land-grid">
-          <div>
-            <div style="display:flex; gap:.5rem; flex-wrap:wrap; margin-bottom:1rem;">
-              <div class="partner-chip" aria-label="vtours Partner"><span>🤝</span> vtours</div>
-              <div class="partner-chip" aria-label="Barceló Partner"><span>🏨</span> Barceló Hotels</div>
+        <div class="section-head" style="margin-bottom:2.5rem;">
+          <span class="eyebrow">Mehr als Kreuzfahrt</span>
+          <span class="rule"></span>
+          <h2 style="color:var(--navy);">Manchmal führt der Traumurlaub auch an Land.</h2>
+          <p class="lead" style="margin-top:.75rem; max-width:600px;">
+            Über unsere Partner vermitteln wir auch traumhafte Hotelreisen und Pauschalurlaube — mit demselben persönlichen Service und echter Leidenschaft.
+          </p>
+        </div>
+
+        <div class="fleet-nav" role="tablist" aria-label="Landurlaub Angebot wählen">
+          <button class="fleet-btn active" role="tab" aria-selected="true"  aria-controls="lp-ba" id="lt-ba" onclick="switchLand('ba')">Barceló · Royal Hideaway</button>
+          <button class="fleet-btn"        role="tab" aria-selected="false" aria-controls="lp-vt" id="lt-vt" onclick="switchLand('vt')">vtours Pauschalreisen</button>
+        </div>
+
+        <!-- Barceló Royal Hideaway -->
+        <div class="fleet-panel active" id="lp-ba" role="tabpanel" aria-labelledby="lt-ba">
+          <div class="fleet-info">
+            <span class="fleet-badge">Adults-only · Luxusresorts · Barceló Portfolio</span>
+            <h2 style="color:var(--navy);">Barceló · Royal Hideaway</h2>
+            <p class="lead">Die exklusive Luxusmarke im Barceló Portfolio — für alle, die beim Strandurlaub keine Kompromisse eingehen wollen.</p>
+            <p style="font-size:.9rem; color:var(--muted);">Royal Hideaway steht für Adults-only-Resorts der Premiumklasse: persönlicher Service, traumhafte Lagen, hervorragende Küche und echte Ruhe. Ob Teneriffa, Cancún, Antigua oder Mexiko — hier erwartet euch höchster Komfort. Und manchmal kombinieren wir auch: Kreuzfahrt hin, Royal Hideaway zurück.</p>
+            <div class="fleet-features">
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Ausschließlich Adults-only — echte Entspannung ohne Kompromisse</span></div>
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Exklusive Lagen: Teneriffa, Cancún, Antigua, Mexiko &amp; mehr</span></div>
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Premium-Service, Gourmetküche &amp; Spa-Einrichtungen</span></div>
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Kombinierbar mit Kreuzfahrten — wir planen gerne beides</span></div>
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Persönliche Beratung — wir kennen die Resorts aus eigener Erfahrung</span></div>
             </div>
-            <span class="eyebrow">Mehr als Kreuzfahrt</span>
-            <span class="rule"></span>
-            <h2 style="color:var(--navy);">Manchmal führt der<br />Traumurlaub auch an Land.</h2>
-            <p class="lead" style="margin-top:1.25rem;">
-              Über unsere Partner <strong>vtours</strong> und <strong>Barceló Hotels</strong> vermitteln
-              wir auch traumhafte Hotelreisen und Landurlaube — mit demselben persönlichen Service.
-            </p>
-            <p style="font-size:.9rem; color:var(--muted); margin-top:1rem;">
-              Besonders am Herzen liegt uns dabei die Luxusmarke
-              <strong>Royal Hideaway</strong> im Barceló Portfolio — exklusive Adults-only-Resorts
-              an den schönsten Stränden der Welt. Ob Teneriffa, Cancún oder Antigua:
-              hier erwartet euch höchster Komfort, Ruhe und echte Verwöhn-Atmosphäre.
-              Und manchmal kombinieren wir auch — Kreuzfahrt hin, Royal Hideaway zurück.
-            </p>
-            <div style="margin-top:2rem;">
-              <a href="https://wa.me/message/ZGBSUS54QR75P1" class="btn btn-dark" target="_blank" rel="noopener" aria-label="Landurlaub anfragen">Landurlaub anfragen</a>
+            <div class="fleet-actions">
+              <a href="https://wa.me/message/ZGBSUS54QR75P1" class="btn btn-gold" target="_blank" rel="noopener">Royal Hideaway anfragen</a>
+              <a href="#kontakt" class="btn btn-outline-dark">Mehr erfahren</a>
             </div>
           </div>
-
-          <div class="land-mosaic" role="list" aria-label="Reiseziele">
-            <div class="land-mosaic-col">
-              <img class="land-img land-img--tall" role="listitem"
-                src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=500&auto=format&fit=crop&q=80"
-                alt="Toskana – Weingut und Hügel" loading="lazy" width="500" />
-              <img class="land-img land-img--wide" role="listitem"
-                src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=500&auto=format&fit=crop&q=80"
-                alt="Japan – Tempel bei Sonnenaufgang" loading="lazy" width="500" />
-            </div>
-            <div class="land-mosaic-col">
-              <img class="land-img land-img--wide" role="listitem"
-                src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=500&auto=format&fit=crop&q=80"
-                alt="Malediven – Wasservilla" loading="lazy" width="500" />
-              <img class="land-img land-img--tall" role="listitem"
-                src="https://images.unsplash.com/photo-1473625247510-8ceb1760943f?w=500&auto=format&fit=crop&q=80"
-                alt="Santorini – weiße Häuser am Hang" loading="lazy" width="500" />
+          <div class="fleet-media">
+            <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800&auto=format&fit=crop&q=80"
+              alt="Luxusresort Pool am Meer" loading="lazy"
+              style="width:100%; border-radius:4px; aspect-ratio:16/9; object-fit:cover;" />
+            <div class="fleet-quote" role="blockquote">
+              Royal Hideaway ist für uns der perfekte Gegenpol zur Kreuzfahrt — absolute Ruhe, echter Luxus, kein Massentourismus.
+              <span class="fleet-quote-attr">— Orkan &amp; Johannes über Royal Hideaway</span>
             </div>
           </div>
         </div>
+
+        <!-- vtours -->
+        <div class="fleet-panel" id="lp-vt" role="tabpanel" aria-labelledby="lt-vt">
+          <div class="fleet-info">
+            <span class="fleet-badge">Pauschalreisen · Individuell · Deutschlandweit</span>
+            <h2 style="color:var(--navy);">vtours Pauschalreisen</h2>
+            <p class="lead">Komfort von der ersten bis zur letzten Minute — mit vtours vermitteln wir sorgfältig zusammengestellte Pauschalreisen für jeden Anspruch.</p>
+            <p style="font-size:.9rem; color:var(--muted);">vtours ist einer der führenden deutschen Reiseveranstalter und bietet ein breites Spektrum an Pauschalreisen — vom klassischen Badeurlaub bis zur Fernreise. Wir kennen das Angebot und helfen euch, das Passende herauszusuchen — mit unserem gewohnten persönlichen Touch.</p>
+            <div class="fleet-features">
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Großes Pauschalreise-Portfolio — Bade-, Kultur- &amp; Fernreisen</span></div>
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Abflüge aus ganz Deutschland — bequem von euch aus</span></div>
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Hotel + Flug aus einer Hand — kein Organisationsaufwand</span></div>
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Persönliche Beratung — wir filtern das Beste für euch heraus</span></div>
+              <div class="fleet-feat"><span class="fleet-feat-dot"></span><span>Ideal auch als Ergänzung zu einer Kreuzfahrt</span></div>
+            </div>
+            <div class="fleet-actions">
+              <a href="https://wa.me/message/ZGBSUS54QR75P1" class="btn btn-gold" target="_blank" rel="noopener">vtours Urlaub anfragen</a>
+              <a href="#kontakt" class="btn btn-outline-dark">Mehr erfahren</a>
+            </div>
+          </div>
+          <div class="fleet-media">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&auto=format&fit=crop&q=80"
+              alt="Traumstrand mit türkisem Wasser" loading="lazy"
+              style="width:100%; border-radius:4px; aspect-ratio:16/9; object-fit:cover;" />
+            <div class="fleet-quote" role="blockquote">
+              Mit vtours haben wir schon viele Traumreisen ermöglicht — die Beratung macht den Unterschied, nicht der Katalog.
+              <span class="fleet-quote-attr">— Orkan &amp; Johannes über vtours</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -1256,8 +1283,8 @@
           <div style="display:flex; align-items:center; gap:.85rem; margin-bottom:.25rem;">
             <div class="logo-mark" style="border-color:rgba(255,255,255,.15); font-size:1rem;" aria-hidden="true">⚓</div>
             <div>
+              <span class="logo-sub" style="display:block;">Kreuzfahrtberatung</span>
               <span class="logo-name" style="font-size:1.1rem; display:block;">Bärenfänger</span>
-              <span class="logo-sub">Kreuzfahrtberatung</span>
             </div>
           </div>
           <p>Leidenschaftliche Kreuzfahrt-Enthusiasten, die ihre Liebe zum Meer zum Herzens-Projekt gemacht haben. Für uns bist du kein Kunde — du bist unser Kreuzfahrt-Freund.</p>
@@ -1347,10 +1374,21 @@
 
     // Fleet tabs
     function switchFleet(id) {
-      document.querySelectorAll('.fleet-btn').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
-      document.querySelectorAll('.fleet-panel').forEach(p => p.classList.remove('active'));
+      const sec = document.getElementById('reedereien');
+      sec.querySelectorAll('.fleet-btn').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+      sec.querySelectorAll('.fleet-panel').forEach(p => p.classList.remove('active'));
       const btn = document.getElementById('ft-' + id);
       const pnl = document.getElementById('fp-' + id);
+      if (btn) { btn.classList.add('active'); btn.setAttribute('aria-selected','true'); }
+      if (pnl) pnl.classList.add('active');
+    }
+
+    function switchLand(id) {
+      const sec = document.getElementById('landurlaub');
+      sec.querySelectorAll('.fleet-btn').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+      sec.querySelectorAll('.fleet-panel').forEach(p => p.classList.remove('active'));
+      const btn = document.getElementById('lt-' + id);
+      const pnl = document.getElementById('lp-' + id);
       if (btn) { btn.classList.add('active'); btn.setAttribute('aria-selected','true'); }
       if (pnl) pnl.classList.add('active');
     }
