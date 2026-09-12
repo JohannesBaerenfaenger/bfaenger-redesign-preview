@@ -8,6 +8,7 @@
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.bfaenger.de/" />
   <link rel="sitemap" type="application/xml" href="https://www.bfaenger.de/sitemap.xml" />
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=1920&auto=format&fit=crop&q=85" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Kreuzfahrtberatung Bärenfänger | Persönliche Luxuskreuzfahrt-Beratung" />
@@ -627,6 +628,24 @@
     .testi-info strong { display: block; font-size: .85rem; font-weight: 500; color: var(--navy); }
     .testi-info span { font-size: .75rem; color: var(--faint); }
 
+    /* ── FAQ ─────────────────────────────────────────── */
+    .faq { background: var(--white); }
+    .faq-list { max-width: 780px; margin: 0 auto; }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-q {
+      width: 100%; background: none; border: none; cursor: pointer;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1.5rem 0; gap: 1rem;
+      font-family: var(--sans); font-size: 1rem; font-weight: 500;
+      color: var(--navy); text-align: left;
+    }
+    .faq-q:hover { color: var(--ocean); }
+    .faq-icon { font-size: 1.5rem; font-weight: 300; flex-shrink: 0; transition: transform .25s; line-height: 1; }
+    .faq-q[aria-expanded="true"] .faq-icon { transform: rotate(45deg); }
+    .faq-a { display: none; padding-bottom: 1.5rem; }
+    .faq-a p { font-size: .92rem; color: var(--muted); line-height: 1.8; margin: 0; }
+    .faq-q[aria-expanded="true"] + .faq-a { display: block; }
+
     /* ── Contact ─────────────────────────────────────── */
     .contact {
       background: var(--ink);
@@ -806,6 +825,7 @@
           <li><a href="#reedereien">Reedereien</a></li>
           <li><a href="#landurlaub">Landurlaub</a></li>
           <li><a href="#testimonials">Erfahrungen</a></li>
+          <li><a href="#faq">FAQ</a></li>
           <li><a href="#kontakt" class="nav-cta-link">Beratung anfragen</a></li>
         </ul>
       </div>
@@ -1449,6 +1469,61 @@
       </div>
     </section>
 
+    <!-- ══ FAQ ══════════════════════════════════════════════ -->
+    <section class="faq sec" id="faq" aria-label="Häufige Fragen">
+      <div class="wrap">
+        <div style="text-align:center; margin-bottom:3rem;">
+          <span class="eyebrow">Alles was du wissen möchtest</span>
+          <span class="rule rule--center"></span>
+          <h2 style="color:var(--navy);">Häufige Fragen</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
+              Was macht Kreuzfahrtberatung Bärenfänger?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-a"><p>Wir sind persönliche Kreuzfahrt-Reisevermittler, spezialisiert auf Luxus- und Expeditionskreuzfahrten. Orkan und Johannes beraten und buchen Reisen mit Silversea, Ponant, Azamara, Star Clippers, Celebrity Cruises, Barceló Royal Hideaway und vtours – ehrlich, leidenschaftlich und persönlich.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
+              Kostet die Beratung etwas?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-a"><p>Nein – die persönliche Beratung ist vollständig kostenlos. Als akkreditierter Reisevermittler erhalten wir eine Provision von den Reedereien. Du zahlst keinen Aufpreis gegenüber der Direktbuchung – oft sogar weniger, da wir On Board Credits und Extras aushandeln.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
+              Welche Kreuzfahrtlinien vermittelt ihr?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-a"><p>Wir sind spezialisiert auf Silversea (Classic & Expedition), Ponant, Azamara, Star Clippers, Celebrity Cruises, Barceló Royal Hideaway und vtours. Wir empfehlen nur Reedereien, die wir selbst kennen und für die wir stehen können.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
+              Wie kann ich euch am besten erreichen?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-a"><p>Am schnellsten per WhatsApp – Orkan ist fast 24 Stunden erreichbar und antwortet persönlich. Alternativ per E-Mail an orkan@bfaenger.de oder über das Kontaktformular weiter unten auf dieser Seite.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
+              Für wen eignet sich eine Luxuskreuzfahrt mit Silversea?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-a"><p>Silversea eignet sich für Reisende, die höchsten Komfort, All-inclusive-Service und intime Atmosphäre schätzen. Mit 200 bis maximal 728 Gästen sind die Schiffe deutlich kleiner als klassische Kreuzfahrtschiffe – das schafft eine besondere, persönliche Stimmung an Bord.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
+              Was ist der Unterschied zwischen Luxus- und Expeditionskreuzfahrt?
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-a"><p>Luxuskreuzfahrten (z.B. Silversea Classic, Azamara, Celebrity) verbinden elegante Destinationen mit höchstem Komfort. Expeditionskreuzfahrten (z.B. Silversea Expedition, Ponant) bringen dich zu unberührten Regionen wie der Antarktis oder Arktis – mit Zodiacs, Expeditionsleitern und Naturerlebnissen, die kein anderes Reiseformat bietet.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ══ CONTACT ═════════════════════════════════════════ -->
     <section class="contact sec" id="kontakt" aria-label="Kontakt und Beratungsanfrage">
       <div class="wrap">
@@ -1624,6 +1699,11 @@
     }));
 
     // Fleet tabs
+    function toggleFaq(btn) {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+    }
+
     function switchFleet(id) {
       const sec = document.getElementById('reedereien');
       sec.querySelectorAll('.fleet-btn').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
