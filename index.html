@@ -523,6 +523,19 @@
       scrollbar-width: none;
     }
     .fleet-nav::-webkit-scrollbar { display: none; }
+    .fleet-nav--reedereien { align-items: flex-end; }
+    .fleet-group {
+      display: flex; flex-direction: column; flex-shrink: 0;
+      margin-right: 1rem; padding-right: 1rem;
+      border-right: 1px solid var(--border);
+    }
+    .fleet-group-label {
+      font-family: var(--sans); font-size: .62rem; font-weight: 600;
+      letter-spacing: .24em; text-transform: uppercase; color: var(--gold);
+      padding: .15rem 1.75rem .35rem; text-align: center;
+      border-bottom: 1px solid var(--gold); margin-bottom: 0;
+    }
+    .fleet-group-tabs { display: flex; }
     .fleet-btn {
       padding: 1rem 1.75rem;
       font-family: var(--sans); font-size: .7rem; font-weight: 500;
@@ -786,6 +799,8 @@
     @media (max-width: 480px) {
       .fleet-nav { gap: 0; }
       .fleet-btn { padding: .85rem 1rem; }
+      .fleet-group { margin-right: .5rem; padding-right: .5rem; }
+      .fleet-group-label { padding-left: 1rem; padding-right: 1rem; }
       .land-mosaic { grid-template-columns: 1fr; }
       .land-mosaic-col:first-child { margin-top: 0; }
     }
@@ -1011,11 +1026,16 @@
           </p>
         </div>
 
-        <div class="fleet-nav" role="tablist" aria-label="Reederei wählen">
-          <button class="fleet-btn active" role="tab" aria-selected="true"  aria-controls="fp-sc" id="ft-sc" onclick="switchFleet('sc')">Silversea Classic</button>
-          <button class="fleet-btn"        role="tab" aria-selected="false" aria-controls="fp-se" id="ft-se" onclick="switchFleet('se')">Silversea Expedition</button>
-          <button class="fleet-btn"        role="tab" aria-selected="false" aria-controls="fp-st" id="ft-st" onclick="switchFleet('st')">Star Clippers</button>
+        <div class="fleet-nav fleet-nav--reedereien" role="tablist" aria-label="Reederei wählen">
+          <div class="fleet-group" role="presentation">
+            <span class="fleet-group-label" aria-hidden="true">Silversea</span>
+            <div class="fleet-group-tabs" role="presentation">
+              <button class="fleet-btn active" role="tab" aria-selected="true"  aria-controls="fp-sc" id="ft-sc" aria-label="Silversea Classic" onclick="switchFleet('sc')">Classic</button>
+              <button class="fleet-btn"        role="tab" aria-selected="false" aria-controls="fp-se" id="ft-se" aria-label="Silversea Expedition" onclick="switchFleet('se')">Expedition</button>
+            </div>
+          </div>
           <button class="fleet-btn"        role="tab" aria-selected="false" aria-controls="fp-po" id="ft-po" onclick="switchFleet('po')">Ponant</button>
+          <button class="fleet-btn"        role="tab" aria-selected="false" aria-controls="fp-st" id="ft-st" onclick="switchFleet('st')">Star Clippers</button>
         </div>
 
         <!-- Silversea Classic -->
@@ -1542,8 +1562,8 @@
           <ul class="foot-links" role="list">
             <li><a href="#reedereien" onclick="switchFleet('sc')">Silversea Classic</a></li>
             <li><a href="#reedereien" onclick="switchFleet('se')">Silversea Expedition</a></li>
-            <li><a href="#reedereien" onclick="switchFleet('st')">Star Clippers</a></li>
             <li><a href="#reedereien" onclick="switchFleet('po')">Ponant</a></li>
+            <li><a href="#reedereien" onclick="switchFleet('st')">Star Clippers</a></li>
           </ul>
         </div>
 
